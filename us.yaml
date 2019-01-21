@@ -112,6 +112,7 @@ months:
     regions: [us]
     week: 3
     wday: 1
+    type: informal
   - name: Inauguration Day
     function: us_inauguration_day(year)
     regions: [us_tx, us_dc, us_la, us_md, us_va]
@@ -126,6 +127,7 @@ months:
     week: 3
     regions: [us]
     wday: 1
+    type: informal
   3:
   - name: Casimir Pulaski Day # First Monday in March
     regions: [us_il]
@@ -271,6 +273,7 @@ months:
     regions: [us]
     mday: 11
     observed: to_weekday_if_weekend(date)
+    type: informal
   - name: Thanksgiving
     regions: [us]
     week: 4
@@ -292,10 +295,10 @@ months:
     regions: [us_md]
   - name: Day after Thanksgiving (Black Friday)
     function: day_after_thanksgiving(year)
-    regions: [us_ca, us_de, us_fl, us_ia, us_il, us_ks, us_ky, us_me, us_mi, us_mn, us_ms, us_ne, us_nh, us_nc, us_pa, us_sc, us_ok, us_tn, us_tx, us_va, us_wa, us_wv]
+    regions: [us]
   12:
   - name: Christmas Eve
-    regions: [us_ar, us_mi, us_nc, us_sc, us_tx, us_wi]
+    regions: [us]
     mday: 24
   - name: Christmas Eve (Holiday) # Note: Always if Christmas Eve don't match
     regions: [us_mi, us_sc, us_va]
@@ -309,7 +312,7 @@ months:
     regions: [us_ar, us_nc, us_ok, us_sc, us_tn, us_tx]
     mday: 26
   - name: New Year's Eve
-    regions: [us_mi, us_wi]
+    regions: [us]
     mday: 31
 
 methods:
